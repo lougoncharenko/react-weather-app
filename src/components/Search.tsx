@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 import './HeaderSearch.css'
 
 export const Search = () => {
+    const [city, setCity] = useState("");
   return (
     <form className="search">
     <span className ="add">🔍</span>
