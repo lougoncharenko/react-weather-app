@@ -1,7 +1,12 @@
 import React from 'react';
 import './WeatherInfo.css'
 
-export const WeatherInfo = () => {
+// interface Props {
+//     weatherData: 
+// }
+
+export const WeatherInfo = (props:any) => {
+    const { data } = props;
   return (
     <section className="weatherInfo">
         <section className="cardTop">
