@@ -36,7 +36,6 @@ export const WeatherInfo = (props:any) => {
             </section>
         </div>
 </section>
-
   );
 }
 
