@@ -1,4 +1,5 @@
 import React from 'react';
+import './WeatherInfo.css'
 
 const WeatherInfo = () => {
   return (
