@@ -25,4 +25,14 @@ export const Search = () => {
   );
 }
 
-
+async function fetchWeather(location: string){
+    let unit = "imperial"
+    const response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=' + location + '&units='+ unit + '&appid=17e839bf7c9e67959dd1caff492f7051')
+    const data = await response.json();
+    const place = data.name;
+    const temperature = data.main.temp;
+    const feels = data.main.feels_like;
+    const desc = data.weather[0].description;
+    const humid = data.main.humidity
+    const maxTemp = data.main.temp_max;
+}
