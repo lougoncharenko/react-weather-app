@@ -25,13 +25,13 @@ export const WeatherInfo = (props:any) => {
         </section>
         <div className='bottom-cards'>
             <section className="cardLeft">
-                <span className="temp"> Temperature: {data.main.temp} </span>
+                <span className="temp"> Temperature: {data.main.temp} °F </span>
                 <img className="weather-icon" src={iconurl} alt=""  />
             </section>
             <div className ="border"> </div>
             <section className="cardRight">
-                <span className="feelsLike"> Feels Like: {data.main.feels_like} </span>
-                <span className="tempMax"> Pressure: {data.main.pressure} </span>
+                <span className="feelsLike"> Feels Like: {data.main.feels_like} °F </span>
+                <span className="tempMax"> Wind Speed {data.wind.speed} miles/hr </span>
                 <span className="humidty"> Humidity: {data.main.humidity} % </span>
             </section>
         </div>
