@@ -3,24 +3,22 @@ import React from 'react';
 const WeatherInfo = () => {
   return (
     <section className="weatherInfo">
-
-    <div className="cardTop">
-      <span className="weatherCondition"></span>
-      <h1 className="city"></h1>
-    </div>
-
-    <div className="cardLeft">
-      <span className="temp"></span>
-      <span className="deg">°F</span>
-      </div>
-
-
-      <div className="cardRight">
-        <span className="feelsLike"></span>
-        <span className="tempMax"></span>
-        <span className="humidty"></span>
-      </div>
-
+        <section className="cardTop">
+            <span className="weatherCondition"></span>
+            <h1 className="city"></h1>
+        </section>
+        <div className='bottom-cards'>
+            <section className="cardLeft">
+                <span className="temp"></span>
+                {/* insert weather icon here */}
+            </section>
+            <div className ="border"> </div>
+            <section className="cardRight">
+                <span className="feelsLike"></span>
+                <span className="tempMax"></span>
+                <span className="humidty"></span>
+            </section>
+        </div>
 </section>
 
   );
