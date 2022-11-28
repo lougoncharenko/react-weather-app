@@ -10,7 +10,7 @@ export const Search = () => {
         e.preventDefault();
         // alert(`The city you entered was: ${city}`);
         if (e.target.value == null) {
-          alert('Enter a city')
+          alert('Enter a valid city')
         } else {
           let unit = "imperial"
           const response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&units='+ unit + '&appid=17e839bf7c9e67959dd1caff492f7051')
