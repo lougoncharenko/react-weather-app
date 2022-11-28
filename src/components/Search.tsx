@@ -1,4 +1,5 @@
 import React, { useState }from 'react';
+import {WeatherInfo} from './WeatherInfo';
 
 import './HeaderSearch.css'
 
@@ -7,7 +8,7 @@ export const Search = () => {
 
     const handleSubmit = (e: any) => {
         e.preventDefault();
-        console.log(`The city you entered was: ${city}`);
+        alert(`The city you entered was: ${city}`);
       }
   return (
     <form onSubmit={handleSubmit} className="search">

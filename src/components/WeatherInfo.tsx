@@ -1,7 +1,7 @@
 import React from 'react';
 import './WeatherInfo.css'
 
-const WeatherInfo = () => {
+export const WeatherInfo = () => {
   return (
     <section className="weatherInfo">
         <section className="cardTop">
@@ -25,4 +25,4 @@ const WeatherInfo = () => {
   );
 }
 
-export default WeatherInfo;
+
